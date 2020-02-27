@@ -1,4 +1,4 @@
-package io.weli.resteasy2445;
+package io.alchemystudio.resteasy.links;
 
 
 import org.jboss.resteasy.links.RESTServiceDiscovery;

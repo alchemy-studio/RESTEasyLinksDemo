@@ -1,8 +1,7 @@
-package io.weli.resteasy2445;
+package io.alchemystudio.resteasy.links;
 
 import org.jboss.resteasy.links.AddLinks;
 import org.jboss.resteasy.links.LinkResource;
-import org.jboss.resteasy.links.RESTServiceDiscovery;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
