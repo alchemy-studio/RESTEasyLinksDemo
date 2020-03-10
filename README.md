@@ -1,3 +1,11 @@
+启动服务：
+
+```bash
+$ mvn jetty:run
+```
+
+访问服务：
+
 ```bash
 $ http -v http://localhost:8080/links
 GET /links HTTP/1.1
