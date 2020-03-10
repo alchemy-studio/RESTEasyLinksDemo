@@ -25,3 +25,34 @@ Server: Jetty(9.4.24.v20191120)
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><fruit xmlns:atom="http://www.w3.org/2005/Atom" name="Apple"><rest rel="self" href="http://localhost:8080/links"/></fruit>
 ```
+
+访问服务：
+
+```bash
+$ http -v "http://localhost:8080/class?className=io.alchemystudio.resteasy.links.Fruit"
+GET /class?className=io.alchemystudio.resteasy.links.Fruit HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Host: localhost:8080
+User-Agent: HTTPie/1.0.3
+
+
+
+HTTP/1.1 200 OK
+Content-Length: 107
+Content-Type: application/json
+Date: Tue, 10 Mar 2020 13:28:34 GMT
+Server: Jetty(9.4.24.v20191120)
+
+[
+    {
+        "href": "http://localhost:8080/links",
+        "hreflang": null,
+        "length": null,
+        "rel": "add",
+        "title": null,
+        "type": null
+    }
+]
+```
