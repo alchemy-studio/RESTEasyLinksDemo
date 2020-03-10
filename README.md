@@ -56,3 +56,34 @@ Server: Jetty(9.4.24.v20191120)
     }
 ]
 ```
+
+访问`ClassLinksProviderService`服务：
+
+```bash
+$ http -v "http://localhost:8080/class?className=io.alchemystudio.resteasy.links.Car"
+GET /class?className=io.alchemystudio.resteasy.links.Car HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Host: localhost:8080
+User-Agent: HTTPie/1.0.3
+
+
+
+HTTP/1.1 200 OK
+Content-Length: 113
+Content-Type: application/json
+Date: Tue, 10 Mar 2020 13:34:55 GMT
+Server: Jetty(9.4.24.v20191120)
+
+[
+    {
+        "href": "http://localhost:8080/links/get2",
+        "hreflang": null,
+        "length": null,
+        "rel": "list",
+        "title": null,
+        "type": null
+    }
+]
+```

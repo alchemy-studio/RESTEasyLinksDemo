@@ -30,5 +30,12 @@ public class FooResource {
         return null;
     }
 
+
+    @Path("/get2")
+    @GET
+    @LinkResource
+    public Car car() {
+        return null;
+    }
 }
 
