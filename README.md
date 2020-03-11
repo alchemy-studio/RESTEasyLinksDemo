@@ -57,7 +57,7 @@ Server: Jetty(9.4.24.v20191120)
 ]
 ```
 
-访问`ClassLinksProviderService`服务：
+访问`ClassLinksProviderService`服务（这个服务用来验证`ClassLinksProviderService`可以自行创建`RESTServiceDiscovery`数据）：
 
 ```bash
 $ http -v "http://localhost:8080/class?className=io.alchemystudio.resteasy.links.Car"
