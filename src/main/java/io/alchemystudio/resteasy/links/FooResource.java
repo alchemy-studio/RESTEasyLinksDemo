@@ -31,11 +31,12 @@ public class FooResource {
     }
 
 
-    @Path("/get2")
+    // 这里标记了`@LinkResource`，则`Car`这个class将被`resteasy-links`模块扫描。
+    @Path("/car")
     @GET
     @LinkResource
     public Car car() {
-        return null;
+        return new Car("FooCar");
     }
 }
 

@@ -18,6 +18,14 @@ public class Car {
     @XmlAttribute
     private String name;
 
+    // 这个constructor必须存在，否则jackson无法正确序列化这个class
+    public Car() {
+    }
+
+    public Car(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
